@@ -1,0 +1,76 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+div.container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+button {
+    padding: 1rem;
+    background-color: blue;
+    border: none;
+    border-radius: 20px;
+    color: white;
+}
+
+#coin {
+    position: relative;
+    width: 15rem;
+    height: 15rem;
+    margin: 2rem 0rem;
+    transform-style: preserve-3d;
+
+}
+
+#coin div {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    backface-visibility: hidden;
+    background-size: contain;
+    position: absolute;
+}
+
+.reszka {
+    background-image: url(pics/2018_5zl_100_niepodleglosc_rtmb.png);
+}
+
+.animate-reszka {
+    animation: flipReszka 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes flipReszka {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(1800deg);
+    }
+}
+
+.orzeł {
+    background-image: url(pics/5złOrzeł.png);
+    transform: rotateY(-180deg);
+}
+
+.animate-orzeł {
+    animation: flipOrzeł 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes flipOrzeł {
+    from {
+        transform: rotateY(0deg);
+
+    }
+    to {
+        transform: rotateY(1620deg);
+    }
+}
